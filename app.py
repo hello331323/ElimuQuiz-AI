@@ -32,7 +32,7 @@ if st.button("✨ Generate Exam"):
 
             # Call the AI
             response = client.chat.completions.create(
-                model="gpt-4-turbo",
+                model="gpt-4o-mini",
                 messages=[{"role": "user", "content": prompt}]
             )
             
@@ -43,3 +43,4 @@ if st.button("✨ Generate Exam"):
             
             # Allow teacher to download it
             st.download_button("Download Exam as Text", exam_text)
+
